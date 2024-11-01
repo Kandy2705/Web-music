@@ -1,0 +1,51 @@
+
+meta(name='viewport', content='width=device-width, initial-scale=1.0')
+title Music Trieu Man
+link(rel="icon" href="./assets/img/logo.png" type="image/x-icon")
+link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css', integrity='sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==', crossorigin='anonymous')
+link(rel='preconnect', href='https://fonts.gstatic.com')
+link(rel="stylesheet" href="./assets/css/css.css")
+link(href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap', rel='stylesheet')
+
+
+.player
+  // Dashboard
+  .dashboard
+    // Header
+    header
+      h4 Nhạc đang được phát:
+      h2 String 57th &amp; 9th
+    // CD
+    .cd
+      .cd-thumb(style="background-image: url('./assets/img/maxresdefault.jpg')")
+    // Control
+    .control
+      .btn.btn-repeat
+        i.fas.fa-redo
+      .btn.btn-prev
+        i.fas.fa-step-backward
+      .btn.btn-toggle-play
+        i.fas.fa-pause.icon-pause
+        i.fas.fa-play.icon-play
+      .btn.btn-next
+        i.fas.fa-step-forward
+      .btn.btn-random
+        i.fas.fa-random
+    input#progress.progress(type='range', value='0', step='1', min='0', max='500')
+    audio#audio(src='')
+  // Playlist
+  .playlist
+footer.footer
+    .footer_text Copyright © 2024 Music Trieu Man
+    .footer_social
+      a(href='https://www.facebook.com/profile.php?id=100022328329551').social_icon
+        i.fab.fa-facebook-square
+      a(href='https://www.instagram.com/tm_kandy275/').social_icon
+        i.fab.fa-instagram
+      a(href='https://github.com/Kandy2705').social_icon
+        i.fab.fa-github
+
+
+script(src="./index.js") 
+
+
